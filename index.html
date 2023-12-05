@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas dos Santos Soares</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #image{
+            margin-top: 3%;
+            width: 50%;
+            height: auto;
+            filter: invert(100%);
+            animation-name: logo;
+            animation-duration: 4s;
+        }
+        @keyframes logo {
+          from {width: 80%;}
+          to {width: 50%;}
+        }
+        #marca{
+            text-align: center;
+        }
+        body{
+            background-color: #393939;
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        .navbar-brand{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255) ;
+        }
+        .d-flex{
+            width: 35%;
+        }
+        .foter{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 5.5rem; 
+          text-align: center;
+          width: 100%;
+          background-color: #202020;
+        }
+        .texto-footer{
+          margin-top: 1%;
+        }
+        p{
+          color:rgb(255, 255, 255);
+        }
+        #barras{
+          height: 20px;
+          width: auto;
+          filter: invert(100%)
+        }
+        #home:hover{
+          scale: 1.1;
+        }
+    </style>
+</head>
+<body onload="document.body.style.opacity='1'" >
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a id="home" class="navbar-brand" href="index.html">
+         HOME
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="favoritos.html">Planos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="imagens\barras.png" id="barras">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="carrinho.html">Carrinho</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="perfil.html">Sobre mim</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="mailto:lucas.dossantos@aluno.fmpsc.edu.br?subject=Questions" title=""">Contato</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div id="marca">
+    <img id="image"  src="imagens\logos.png">
+</div>
+    
+</body>
+
+<footer class="foter">
+  <p class="texto-footer">Telefone para contato: (123) 456-7890</p>
+  <p  class="texto-footer">© All rights reserved to Lucas dos Santos Soares</p>
+</footer>
+
+</html>
+
